@@ -31,6 +31,24 @@
                         "Succeeded"
                     ]
                 }
+            },
+            "List_all_blob_directories_using_path": {
+                "type": "ServiceProvider",
+                "inputs": {
+                    "parameters": {
+                        "containerName": "testcontainer"
+                    },
+                    "serviceProviderConfiguration": {
+                        "connectionName": "AzureBlob",
+                        "operationId": "listBlobDirectories",
+                        "serviceProviderId": "/serviceProviders/AzureBlob"
+                    }
+                },
+                "runAfter": {
+                    "Initialize_variable_2": [
+                        "Succeeded"
+                    ]
+                }
             }
         },
         "triggers": {
