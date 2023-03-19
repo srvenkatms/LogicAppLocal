@@ -21,8 +21,8 @@
                     "variables": [
                         {
                             "name": "secondvar",
-                            "type": "integer",
-                            "value": 10
+                            "type": "string",
+                            "value": "@parameters('pName')"
                         }
                     ]
                 },
