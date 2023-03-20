@@ -30,7 +30,7 @@ jobs:
     - name: Package logic
       #run: (cd logic; mkdir -p ../output; zip -r ../output/logic.zip .)
       #run: (cd Stateless2; mkdir -p ../output; zip -r ../output/logic.zip .)
-      run: (mkdir -p output; zip -r /output/logic.zip .)
+      run: (mkdir -p output; zip -r ./output/logic.zip .)
     - name: Upload app zip package
       uses: actions/upload-artifact@v2
       with:
